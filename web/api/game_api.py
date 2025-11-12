@@ -222,6 +222,3 @@ def get_concepts():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
-
-# Export app for Vercel
-handler = app
