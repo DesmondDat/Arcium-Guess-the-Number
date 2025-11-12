@@ -1,7 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "pip install -r requirements.txt",
-  "env": {
-    "PYTHONUNBUFFERED": "1"
-  }
+  "builds": [
+    {
+      "src": "wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "wsgi.py"
+    }
+  ]
 }
