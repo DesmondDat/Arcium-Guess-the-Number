@@ -1,0 +1,16 @@
+{
+  "name": "arcium-guess-number-api",
+  "version": "1.0.0",
+  "description": "Backend API for Guess the Number game",
+  "main": "game_api.py",
+  "scripts": {
+    "start": "python game_api.py",
+    "dev": "python -m flask run",
+    "test": "pytest"
+  },
+  "dependencies": {
+    "flask": "^2.3.0",
+    "flask-cors": "^4.0.0",
+    "cryptography": "^41.0.7"
+  }
+}
